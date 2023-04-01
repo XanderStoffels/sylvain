@@ -7,3 +7,8 @@ node_modules
 .env
 dist
 .DS_Store
+./db
+db
+db/pg_stat_tmp/db_0.stat
+
+db/pg_stat_tmp/
