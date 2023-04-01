@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  # Postgres
+  db:
+    image: postgres:12.2
+    container_name: sylvain-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: prdb1234!
+      POSTGRES_USER: prdbuser
+      POSTGRES_DB: sylvaindb
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
